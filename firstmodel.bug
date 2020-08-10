@@ -1,0 +1,19 @@
+model {
+
+  for (i in 1:length(logpopulation)) {
+
+    for (j in 1:length(daycent)) {
+      deaths[i,j] ~ dpois(lambda[i,j])
+      log(lambda[i,j]) <- logpopulation[i] + intercept[i] + slope*daycent[j]
+    }
+
+    intercept[i] ~ dnorm(mu.intercept, 1/sigma.intercept^2)
+
+  }
+
+  slope ~ dnorm(0, 1/100^2)
+  
+  mu.intercept ~ dnorm(0, 1/100^2)
+  sigma.intercept ~ dunif(0, 100)
+
+}
