@@ -38,31 +38,25 @@ Latvia, Malta and Slovakia didn’t have death cases in this time period.
 ![GitHub Logo](/IMG/2.png)
 
 # First model
-#	The model is a log-linear regression model (Poisson model). Response variable, deaths [i, j]), is number of COVID-19 deaths recorded in country i (i = 1...27) on day j (j = 1…16).
-#	Hyperparameters are mu.intercept, sigma.intercept, and slope.
-Parameters are lambda and intercept.
-#	JAGS model in the file named firstmodel.bug
-
-Number of chains =  4
-Length of adaptation = 10,000
-Length of burn-in = 50,000
-Number of iterations used per chain = 200,000
-Thinning = 100
+* The model is a log-linear regression model (Poisson model). Response variable, deaths [i, j]), is number of COVID-19 deaths recorded in country i (i = 1...27) on day j (j = 1…16).
+* Hyperparameters are mu.intercept, sigma.intercept, and slope.
+* Parameters are lambda and intercept.
+* JAGS model in the file named firstmodel.bug
+* Number of chains =  4
+* Length of adaptation = 10,000
+* Length of burn-in = 50,000
+* Number of iterations used per chain = 200,000
+* Thinning = 100
 
 
 # Second model
 
-JAGS model in firstmodel.bug, create an extended JAGS model that allows each country to have a separate slope
-
-Number of chains =  4
-
-Length of adaptation = 10,000
-
-Length of burn-in = 50,000
-
-Number of iterations used per chain = 300,000
-
-Thinning = 100
+* JAGS model in firstmodel.bug, create an extended JAGS model that allows each country to have a separate slope
+* Number of chains =  4
+* Length of adaptation = 10,000
+* Length of burn-in = 50,000
+* Number of iterations used per chain = 300,000
+* Thinning = 100
 
 # Conclusions
 In this project data from of daily deaths related to COVID-19 in the 27 European Union (EU) member states for the second half of March 2020 investigated. First the data briefly investigated and then two Bayesian model was used to further explore the data and try to fit a Bayesian model. From the data I found the following:
