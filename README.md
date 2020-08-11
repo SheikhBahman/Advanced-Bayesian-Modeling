@@ -1,5 +1,5 @@
 # Advanced-Bayesian-Modeling
-Course project of my CS 598: Advanced Bayesian Modeling
+Course project of my CS 598: Advanced Bayesian Modeling at UIUC
 
 This is my individual course project for Advanced Bayesian Modeling. For this project The data file EUCOVIDdeaths.csv contains data from the European Center for
 Disease Prevention and Control (ECDC) on daily deaths related to COVID-19 in the 27 European Union (EU) member states for the second half of March 2020.1 Each row represents an
